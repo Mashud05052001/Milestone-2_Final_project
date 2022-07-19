@@ -1,0 +1,299 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* Common Colors */
+:root {
+    --white: #fff;
+    --black: rgb(0, 0, 0);
+    --orange: rgb(138, 97, 44);
+}
+
+/* Common Utilities */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--white);
+    width: 100vw;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+
+
+/*-------------------------- 
+             Heading section
+---------------------------- */
+header {
+    margin: 100px 0px 100px;
+
+}
+
+.container {
+    width: 85vw;
+    height: 75vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 25px;
+}
+
+
+.container .head {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .head-1 {
+
+    padding: 100px 0px 0px 100px;
+}
+
+.head h1 {
+    font-size: 4.5em;
+    line-height: 75px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.head p {
+    width: 80%;
+    line-height: 20px;
+    margin-bottom: 30px;
+    letter-spacing: 1.2px;
+}
+
+.head button {
+    width: 250px;
+    padding: 15px 20px;
+    background-color: var(--orange);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    /* position: relative; */
+}
+
+.head button:hover {
+    transform: translatex(6px);
+}
+
+.head button a {
+    text-decoration: none;
+    font-size: 1.9em;
+    color: var(--white);
+    font-weight: 400;
+
+
+}
+
+.container .head-2 {
+    display: flex;
+    align-items: center;
+}
+
+.head img {
+    height: 70%;
+}
+
+/* ----------------Heading----------------- */
+
+
+
+/*-------------------------- 
+             Body section
+---------------------------- */
+main {
+    margin-bottom: 100px;
+}
+
+main .large-container {
+    display: flex;
+    width: 85vw;
+    margin: 0 auto;
+    background-color: var(--white);
+    color: var(--black);
+
+}
+
+
+
+/* ----------form---------- */
+.match-info {
+    width: 22%;
+    height: 400px;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+
+
+
+}
+
+.match-info ul {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.match-info ul li {
+    background-color: var(--orange);
+    height: 40px;
+    width: 75%;
+    margin: 30px 0px;
+    padding: 10px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.match-info ul li a {
+    font-size: 1.2em;
+}
+
+
+/* -------------Transfar--------------- */
+.transfers {
+    margin-left: 2%;
+    width: 80%;
+    display: grid;
+    grid-column-gap: 2%;
+    grid-row-gap: 5%;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.transfer {
+    box-shadow: 7px 2px 16px -6px #a5a4a4;
+    border-radius: 10px;
+}
+
+.transfer img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.transfer .sidegap {
+    margin-left: 15px;
+}
+
+.transfer a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 400;
+    border: 1px solid black;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.transfer h3 {
+    margin-top: 10px;
+
+}
+
+.transfer .transfer-message {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    margin: 5px 0;
+}
+
+
+/* -----------End Of Body Part--------------- */
+
+
+
+/* -------------------------
+                    FOOTER
+---------------------------- */
+
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    width: 100vw;
+
+}
+
+footer .footer {
+    width: 80vw;
+    height: 30vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1px 1fr;
+    padding-top: 50px;
+}
+
+.footer h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.update ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+
+}
+
+
+
+.update ul li a {
+    color: rgb(99, 99, 180);
+    font-size: 1.1em;
+    transition: .15s linear;
+}
+
+.update ul li a:hover {
+    color: rgb(57, 60, 214);
+}
+
+hr {
+    /* width: 40%;
+    height: 40%; */
+    opacity: 30%;
+
+}
+
+.follow-me {
+    margin-left: 50px;
+}
+
+.follow-me ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 15px;
+}
+
+.follow-me ul li {
+    margin-right: 40px;
+
+}
+
+.follow-me ul li i {
+    font-size: 250%;
+}
