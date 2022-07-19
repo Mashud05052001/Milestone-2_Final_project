@@ -121,6 +121,12 @@ header {
 /*-------------------------- 
              Body section
 ---------------------------- */
+
+
+
+
+
+
 main {
     margin-bottom: 100px;
 }
@@ -137,6 +143,9 @@ main .large-container {
 
 
 /* ----------form---------- */
+
+
+
 .match-info {
     width: 22%;
     height: 400px;
@@ -177,8 +186,14 @@ main .large-container {
 }
 
 
+
+
 /* -------------Transfar--------------- */
-.transfers {
+
+
+
+.transfers,
+.matches {
     margin-left: 2%;
     width: 80%;
     display: grid;
@@ -187,9 +202,12 @@ main .large-container {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.transfer {
+.transfer,
+.match {
     box-shadow: 7px 2px 16px -6px #a5a4a4;
     border-radius: 10px;
+    height: 320px;
+
 }
 
 .transfer img {
@@ -223,7 +241,59 @@ main .large-container {
 }
 
 
-/* -----------End Of Body Part--------------- */
+
+/* Matches */
+.matches {
+    grid-row-gap: 40px;
+
+}
+
+.match {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 7px 2px 16px -6px #a5a4a4;
+    border-radius: 10px;
+    height: 180px;
+}
+
+.match .images {
+    display: flex;
+    align-items: center;
+}
+
+.match .images img {
+    width: 30%;
+    margin: 0px 15px 15px 15px;
+}
+
+.match .match-schedule {
+    margin-left: 15px;
+}
+
+.match .match-schedule>p:nth-child(1) {
+    font-size: 1.4em;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    margin-bottom: -2px;
+
+}
+
+.match .match-schedule>p:nth-child(2) {
+    font-size: 1em;
+    font-weight: 300;
+
+
+
+}
+
+
+
+
+
+/* --------------------------
+        End Of Body Part
+----------------------------- */
 
 
 
