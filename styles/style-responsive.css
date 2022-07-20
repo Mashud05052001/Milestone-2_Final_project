@@ -178,12 +178,15 @@
 
     .update ul {
 
-        grid-template-columns: 0.75fr repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
         grid-row-gap: 20px;
         grid-column-gap: 5px;
-        margin-bottom: 25px;
+        margin-bottom: 35px;
 
     }
+
+
 
 
 
