@@ -227,7 +227,7 @@ main .large-container {
 .match {
     box-shadow: 7px 2px 16px -6px var(--ash);
     border-radius: 10px;
-    height: 320px;
+    height: 100%;
 
 }
 
@@ -313,7 +313,6 @@ main .large-container {
 
 
 .view-all {
-
     width: 100%;
     margin-top: 60px;
     display: flex;
