@@ -6,6 +6,8 @@
     --white: #fff;
     --black: rgb(0, 0, 0);
     --orange: rgb(138, 97, 44);
+    --purple: rgb(99, 99, 180);
+    --ash: #a5a4a4;
 }
 
 /* Common Utilities */
@@ -38,14 +40,17 @@ ul li a {
 /*-------------------------- 
              Heading section
 ---------------------------- */
+
+
+
 header {
-    margin: 100px 0px 100px;
+    margin: 80px 0px 100px;
 
 }
 
 .container {
     width: 85vw;
-    height: 75vh;
+    height: 85vh;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -65,7 +70,7 @@ header {
 
 .container .head-1 {
 
-    padding: 100px 0px 0px 100px;
+    padding: 100px 0px 70px 100px;
 }
 
 .head h1 {
@@ -101,9 +106,18 @@ header {
     font-size: 1.9em;
     color: var(--white);
     font-weight: 400;
+}
 
+.head i {
+    color: var(--white);
+    position: relative;
+    left: 18px;
+    top: 1px;
+    font-size: 1.6em;
 
 }
+
+
 
 .container .head-2 {
     display: flex;
@@ -111,7 +125,8 @@ header {
 }
 
 .head img {
-    height: 70%;
+    width: 100%;
+
 }
 
 /* ----------------Heading----------------- */
@@ -185,10 +200,16 @@ main .large-container {
     font-size: 1.2em;
 }
 
+.match-info i {
+    color: white;
+    margin-right: 10px;
+    font-size: 25px;
+}
 
 
 
 /* -------------Transfar--------------- */
+
 
 
 
@@ -204,7 +225,7 @@ main .large-container {
 
 .transfer,
 .match {
-    box-shadow: 7px 2px 16px -6px #a5a4a4;
+    box-shadow: 7px 2px 16px -6px var(--ash);
     border-radius: 10px;
     height: 320px;
 
@@ -243,6 +264,9 @@ main .large-container {
 
 
 /* Matches */
+
+
+
 .matches {
     grid-row-gap: 40px;
 
@@ -252,7 +276,7 @@ main .large-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    box-shadow: 7px 2px 16px -6px #a5a4a4;
+    box-shadow: 7px 2px 16px -6px var(--ash);
     border-radius: 10px;
     height: 180px;
 }
@@ -288,7 +312,27 @@ main .large-container {
 }
 
 
+.view-all {
 
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.view-all a {
+    display: none;
+    text-decoration: none;
+    font-size: 1.4em;
+    background-color: var(--orange);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 40px;
+    letter-spacing: 1.4px;
+    cursor: pointer;
+
+}
 
 
 /* --------------------------
@@ -310,11 +354,10 @@ footer {
 
 footer .footer {
     width: 80vw;
-    height: 30vh;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1.5fr 1px 1fr;
-    padding-top: 50px;
+    padding: 50px 0px;
 }
 
 .footer h1 {
@@ -333,7 +376,7 @@ footer .footer {
 
 
 .update ul li a {
-    color: rgb(99, 99, 180);
+    color: var(--purple);
     font-size: 1.1em;
     transition: .15s linear;
 }
@@ -366,4 +409,5 @@ hr {
 
 .follow-me ul li i {
     font-size: 250%;
+    color: var(--purple);
 }
